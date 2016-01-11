@@ -1,0 +1,26 @@
+{
+  "name": "gitevents.github.io",
+  "version": "1.0.0",
+  "description": "the gitevents landing page http://gitevents.github.io",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iancrowther/gitevents.github.io.git"
+  },
+  "keywords": [
+    "gitevents",
+    "gh-pages"
+  ],
+  "author": "Ian Crowther <ian@nexttick.io> (http://nexttick.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iancrowther/gitevents.github.io/issues"
+  },
+  "homepage": "https://github.com/iancrowther/gitevents.github.io#readme",
+  "dependencies": {
+    "contributor": "^0.1.25"
+  }
+}
