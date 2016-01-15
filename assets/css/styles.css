@@ -1,0 +1,67 @@
+html {
+    color: #292F36;
+}
+
+.site-header {
+    background: linear-gradient(to top, #fdd835 0%,#ffeb3b 100%);
+    padding: 2.5rem 0;
+    text-align: center;
+}
+    .site-header__logo {
+        width: 65%;
+        max-width: 200px;
+        margin: -3rem 0;
+    }
+
+    .site-header__title {
+        margin: 1rem 0 0.3rem 0;
+    }
+
+    .site-header__tagline {
+        font-size: 2rem;
+        font-weight: 200;
+        margin: 0;
+    }
+
+.main {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .main > p {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .main > p:last-of-type {
+        margin-top: 1.5rem;
+    }
+
+.plugins {
+    margin-top: 2.5rem;
+}
+
+.plugin {
+    text-align: left;
+}
+    .plugin .card-content {
+        height: 150px;
+    }
+
+@media only screen and (min-width: 601px) {
+    .site-header,
+    .main {
+        padding: 5rem 0;
+    }
+
+    .main > p:last-of-type {
+        margin-top: 3rem;
+    }
+
+    .plugins {
+        margin-top: 5rem;
+    }
+}
