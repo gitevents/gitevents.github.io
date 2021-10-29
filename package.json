@@ -2,25 +2,31 @@
   "name": "gitevents.github.io",
   "version": "1.0.0",
   "description": "the gitevents landing page http://gitevents.github.io",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "gitevents",
+    "gh-pages"
+  ],
+  "homepage": "https://github.com/iancrowther/gitevents.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/iancrowther/gitevents.github.io/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iancrowther/gitevents.github.io.git"
   },
-  "keywords": [
-    "gitevents",
-    "gh-pages"
-  ],
-  "author": "Ian Crowther <ian@nexttick.io> (http://nexttick.io)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iancrowther/gitevents.github.io/issues"
+  "author": "Ian Crowther <ian@nexttick.io> (http://nexttick.io)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server",
+    "build": "windicss --config windi.config.js './index.html' --output assets/css/main.css",
+    "analysis": "windicss-analysis",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/iancrowther/gitevents.github.io#readme",
-  "dependencies": {
-    "contributor": "^0.1.25"
+  "devDependencies": {
+    "http-server": "^14.0.0",
+    "prettier": "^2.4.1",
+    "windicss": "^3.2.0",
+    "windicss-analysis": "^0.3.4"
   }
 }
